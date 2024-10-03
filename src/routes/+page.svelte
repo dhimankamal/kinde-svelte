@@ -1,9 +1,17 @@
-<script>
+<script lang="ts">
+	import type { LayoutServerData } from './$types';
+
+	export let data: LayoutServerData;
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Clousor" />
+	<title>Kinde Auth kamal</title>
 </svelte:head>
 
-<h1 class="text-3xl font-bold">Hello world!</h1>
+<main>
+	<div class="container mx-auto flex py-20 items-center justify-center">
+		<div class="">
+			<p class="text-center">Kinde authentication (email+code) </p>
+		</div>
+	</div>
+</main>
