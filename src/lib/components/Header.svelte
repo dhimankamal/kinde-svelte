@@ -11,7 +11,7 @@
 		{#if isAuthenticated}
 			<div class="flex justify-between items-center gap-8">
 				<div class="avatar">
-					{user?.given_name}
+					{user?.given_name || user?.email}
 				</div>
 				<div class="flex gap-4 items-center">
 					<a class="px-4 py-2 bg-gray-900 text-white" href="/api/auth/logout"> Sign out </a>
